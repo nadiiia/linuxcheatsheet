@@ -63,7 +63,7 @@ cat filename0; cat filename1; cat filename2
 Standard output of a file can be added into a new file or existing file with ‘>‘ (greater than) symbol. Careful, existing contents of test1 will be overwritten by contents of test file.
    
  ``` shell script 
-cat test > test1
+cat test0 > test1
   ```
   
   similarly contents of multiple can be added into single file (new or existing)
@@ -76,12 +76,12 @@ cat test0 test1 test2 > testN
 The contents of test file will be appended at the end of test1 file.
    
  ``` shell script 
-cat test >> test1
+cat test0 >> test1
   ```
 + Sorting Contents of Multiple Files in a Single File
 
 This will create a file test4 and output of cat command is piped to sort and result will be redirected in a newly created file.
    
  ``` shell script 
-cat test test1 test2 test3 | sort > test4
+cat test0 test1 test2 test3 | sort > test4
   ```
