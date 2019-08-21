@@ -85,3 +85,26 @@ This will create a file test4 and output of cat command is piped to sort and res
  ``` shell script 
 cat test0 test1 test2 test3 | sort > test4
   ```
+  
+# Special characters
+
++  **-**
+
+if filename is **-** (dash), you simply need to give can some indication that you want a litteral file of that name, not the internal alias it has. You can do this easiest by specifying a path to the file
+``` shell script
+cat ./-
+```
++  **#**
+
+Line beginning with **#** will not be executed. Used  as a comment. 
++  **;**
+
+Command separator [semicolon]. Permits putting two or more commands on the same line.
+
++  **.**
+
+ When working with filenames, a leading dot is the prefix of a "hidden" file, a file that an ls will not normally show.
+ 
+ When considering directory names, a **.** (single dot) represents the current working directory, and **..** (two dots)  denote the parent directory.
+ 
+ When matching characters, as part of a regular expression, a "**.**" matches a single character. 
