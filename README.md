@@ -148,8 +148,58 @@ ls [OPTIONS] [FILES]
 | ls -t |sort by time & date   |
 | ls -X |sort by extension name    |	
  	
- 	
- 	
+ List root directory:
+
+ ``` shell script
+ ls /
+````
+
+
+List parent directory:
+ ``` shell script
+ ls ..
+````
+
+List user's home directory (e.g: /home/user):
+
+ ``` shell script
+ ls ~
+````
+ 
+
+List with long format:
+
+ ``` shell script
+ ls -l
+````
+
+Show hidden files:
+ ``` shell script
+ ls -a
+````
+
+List with long format and show hidden files:
+
+ ``` shell script
+ ls -la
+````
+
+
+Sort by file size:
+
+ ``` shell script
+ ls -S
+````
+List all subdirectories:
+
+ ``` shell script
+ ls *
+```
++ find
+ ``` shell script
+find [where to start searching from]
+ [expression determines what to find] [-options] [what to find]
+ ```
  	
  	
  	
