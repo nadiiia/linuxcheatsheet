@@ -20,7 +20,7 @@ ssh-keygen
 cat [OPTION] [FILE]...
 ```
 
-+ display contents fo file
++ display contents of file
 + view contents of multiple files 
 
 ``` shell script
@@ -85,7 +85,26 @@ This will create a file test4 and output of cat command is piped to sort and res
  ``` shell script 
 cat test0 test1 test2 test3 | sort > test4
   ```
-  
+# Copying, moving, removing files
+
++ to make a copy of file1 in the current working directory and call it file2
+``` shell script
+cp file 1 file2
+```
++ to move or rename  file1 to file2
+``` shell script
+mv file 1 file2
+```  
+ +  to remove file use the following
+ ``` shell scrip
+  rm [OPTION]... FILE...
+```
+
+ +  to remove empty directories from the filesystem 
+ ``` shell scrip
+  rmdir [-p] [-v | –verbose] [–ignore-fail-on-non-empty] directories …..
+```
+
 # Special characters
 
 +  **-**
@@ -125,6 +144,9 @@ or
 
 # Useful commands
 
++   pwd
+
+ print path of the working directory 
 +   ls 
 
 It is used to list information about files and directories within the file system.
@@ -165,31 +187,7 @@ List user's home directory (e.g: /home/user):
  ``` shell script
  ls ~
 ````
- 
 
-List with long format:
-
- ``` shell script
- ls -l
-````
-
-Show hidden files:
- ``` shell script
- ls -a
-````
-
-List with long format and show hidden files:
-
- ``` shell script
- ls -la
-````
-
-
-Sort by file size:
-
- ``` shell script
- ls -S
-````
 List all subdirectories:
 
  ``` shell script
