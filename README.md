@@ -239,3 +239,22 @@ chmod [options] mode[,mode] file1 [file2 ...]
 | x|executable  |
 | +|add permission   |
 | - |take away permission   |
+
++ ps
+
+will show the processes status as snapshot, information about your processes, with their associated PID and status, type
+
+PID: Process ID, shows the process identification number.
+
+TTY: Identifies the terminal from which the process was executed.
+
+TIME: Shows the processor’s time occupied by the program.
+
+CMD: Shows the command used to launch the process.
+
+The **&** at the end runs the job in the background and returns the prompt straight away, allowing you do run other programs while waiting for that one to finish.
+
++ jobs
+
+list current jobs
+
