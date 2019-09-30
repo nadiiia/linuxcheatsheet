@@ -200,9 +200,11 @@ find [where to start searching from]
  ```
  + grep
  
- ``` shell script
+```shell script
  grep [options] pattern [files]
-  ```	
+```
+
+
 | option     | description        |
 | ------------- |:-------------:| 
 |-c      | This prints only a count of the lines that match a pattern| 
@@ -216,4 +218,43 @@ find [where to start searching from]
 | -E |Treats pattern as an extended regular expression (ERE)    |
 | -w |Match whole word   |
 | -o |Print only the matched parts of a matching line, with each such part on a separate output line. 	   |
+
++ chmod
+
+changes the permissions of the file. 
+
+```shell script
+chmod [options] mode[,mode] file1 [file2 ...]
+```
+
+
+| option     | description        |
+| ------------- |:-------------:| 
+|u     | user| 
+|g   | group   |
+| o  | other|
+| a |all    |
+| r |read    |
+|w |write (and delete)   |
+| x|executable  |
+| +|add permission   |
+| - |take away permission   |
+
++ ps
+
+will show the processes status as snapshot, information about your processes, with their associated PID and status, type
+
+PID: Process ID, shows the process identification number.
+
+TTY: Identifies the terminal from which the process was executed.
+
+TIME: Shows the processor’s time occupied by the program.
+
+CMD: Shows the command used to launch the process.
+
+The **&** at the end runs the job in the background and returns the prompt straight away, allowing you do run other programs while waiting for that one to finish.
+
++ jobs
+
+list current jobs
 
